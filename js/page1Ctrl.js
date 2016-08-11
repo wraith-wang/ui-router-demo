@@ -1,5 +1,5 @@
 /**
- * wangdongdong
+ * page1 controller
  * @authors wangdongdong (469772256@qq.com)
  * @date    2016-08-11 10:39:24
  * @version $Id$

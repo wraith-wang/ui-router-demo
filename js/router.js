@@ -1,5 +1,5 @@
 /**
- * wangdongdong
+ * router
  * @authors wangdongdong (469772256@qq.com)
  * @date    2016-08-11 10:39:24
  * @version $Id$
@@ -27,8 +27,10 @@ angular.module('myApp').config(function($stateProvider, $urlRouterProvider) {
       }
     },
     resolve: {
-      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
-        return $ocLazyLoad.load('js/page1Ctrl.js');
+      deps: ['$ocLazyLoad', function($ocLazyLoad) {
+        return $ocLazyLoad.load({
+          files: ['js/page1Ctrl.js', 'css/page1.css']
+        });
       }]
     }
   }).state("page2", {
@@ -40,7 +42,7 @@ angular.module('myApp').config(function($stateProvider, $urlRouterProvider) {
       }
     },
     resolve: {
-      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+      deps: ['$ocLazyLoad', function($ocLazyLoad) {
         return $ocLazyLoad.load('js/page2Ctrl.js');
       }]
     }
