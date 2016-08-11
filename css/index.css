@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ * wangdongdong
+ * @authors wangdongdong (469772256@qq.com)
+ * @date    2016-08-11 10:53:17
+ * @version $Id$
+ */
+
+
+.view {
+  width: 100%;
+  height: 200px;
+  border: 1px solid red;
+}
