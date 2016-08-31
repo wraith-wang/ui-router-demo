@@ -27,7 +27,7 @@ angular.module('myApp').config(function($stateProvider, $urlRouterProvider) {
       }
     },
     resolve: {
-      deps: ['$ocLazyLoad', function($ocLazyLoad) {
+      loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
         return $ocLazyLoad.load({
           files: ['js/page1Ctrl.js', 'css/page1.css']
         });
